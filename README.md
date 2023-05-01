@@ -10,6 +10,7 @@ Stamp catalog items displayed in a list.
 Stamp data fetched from an API and saved in the app.
 Users can choose an item from the list and add it to the shopping cart.
 Upon checkout, the total amount to pay will be calculated.
+Added a new Onboarding Screen View which has a stamp list with a scroll view.
 
 Up coming features:
 
