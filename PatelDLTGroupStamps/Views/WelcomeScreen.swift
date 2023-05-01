@@ -55,7 +55,7 @@ struct WelcomeScreen_Previews: PreviewProvider {
   static private var onboardingScreenIsShowing = Binding.constant(false)
   static private var stamp = Binding.constant(Stamp(totalAmount: Double(), discountedAmount: Double()))
   static var previews: some View {
-    //OnboardingScreenView(onboardingScreenIsShowing: onboardingScreenIsShowing)
+    OnboardingScreenView(onboardingScreenIsShowing: onboardingScreenIsShowing)
     WelcomeScreenView(welcomeScreenIsShowing: welcomeScreenIsShowing, stamp: stamp)
   }
 }

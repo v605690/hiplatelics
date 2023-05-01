@@ -19,6 +19,7 @@
 		AB193C2129E21DE000365AA5 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB193C2029E21DE000365AA5 /* RoundedViews.swift */; };
 		AB193C2329E3230600365AA5 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB193C2229E3230600365AA5 /* OnboardingScreenView.swift */; };
 		AB2D19AB29F74430007C8394 /* DiscountTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2D19AA29F74430007C8394 /* DiscountTypeView.swift */; };
+		ABB3615929FF5DA700C87347 /* StampStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3615829FF5DA700C87347 /* StampStockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		AB2D198D29F6F167007C8394 /* W3_Homework_Assignment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = W3_Homework_Assignment.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AB2D19AA29F74430007C8394 /* DiscountTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTypeView.swift; sourceTree = "<group>"; };
 		ABA0021D29E9D18D007A0001 /* dataCollectionPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = dataCollectionPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ABB3615829FF5DA700C87347 /* StampStockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampStockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				AB193C2029E21DE000365AA5 /* RoundedViews.swift */,
 				AB193C2229E3230600365AA5 /* OnboardingScreenView.swift */,
 				AB2D19AA29F74430007C8394 /* DiscountTypeView.swift */,
+				ABB3615829FF5DA700C87347 /* StampStockView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				AB193C0629E1FF7B00365AA5 /* ContentView.swift in Sources */,
 				AB193C2329E3230600365AA5 /* OnboardingScreenView.swift in Sources */,
 				AB2D19AB29F74430007C8394 /* DiscountTypeView.swift in Sources */,
+				ABB3615929FF5DA700C87347 /* StampStockView.swift in Sources */,
 				AB193C0429E1FF7B00365AA5 /* Hiplatelics.swift in Sources */,
 				AB193C2129E21DE000365AA5 /* RoundedViews.swift in Sources */,
 				AB193C1D29E21A5900365AA5 /* Stamp.swift in Sources */,
@@ -359,6 +363,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Crus-Technologies.PatelDLTGroupStamps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,6 +396,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Crus-Technologies.PatelDLTGroupStamps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
