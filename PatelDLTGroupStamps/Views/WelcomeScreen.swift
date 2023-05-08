@@ -10,10 +10,11 @@ import SwiftUI
 struct WelcomeScreenView: View {
   
   @Binding var welcomeScreenIsShowing: Bool
+  @Binding var nextButtonIsShowing: Bool
   @Binding var stamp: Stamp
   
   var body: some View {
-    HeaderView(welcomeScreenIsShowing: $welcomeScreenIsShowing, stamp: $stamp)
+    HeaderView(nextButtonIsShowing: $nextButtonIsShowing, welcomeScreenIsShowing: $welcomeScreenIsShowing, stamp: $stamp)
   }
 }
 
@@ -21,6 +22,7 @@ struct HeaderView: View {
   @Environment(\.verticalSizeClass) var veritcalSizeClass
   @Environment(\.horizontalSizeClass) var horizontalSizeClass
   
+  @Binding var nextButtonIsShowing: Bool
   @Binding var welcomeScreenIsShowing: Bool
   @State private var onboardingScreenIsShowing = false
   @Binding var stamp: Stamp
@@ -40,8 +42,9 @@ struct HeaderView: View {
         } label: {
           RoundedViews(systemName: "cursorarrow.click")
         }
+        
         .sheet(isPresented: $onboardingScreenIsShowing) {
-          OnboardingScreenView(onboardingScreenIsShowing: $onboardingScreenIsShowing)
+          OnboardingScreenView( nextButtonIsShowing: $nextButtonIsShowing, onboardingScreenIsShowing: $onboardingScreenIsShowing, stamps: stamp)
         }
       }
     }
@@ -52,10 +55,11 @@ struct HeaderView: View {
 
 struct WelcomeScreen_Previews: PreviewProvider {
   static private var welcomeScreenIsShowing = Binding.constant(false)
-  static private var onboardingScreenIsShowing = Binding.constant(false)
-  static private var stamp = Binding.constant(Stamp(totalAmount: Double(), discountedAmount: Double()))
+  static private var nextButtonIsShowing = Binding.constant(false)
+  static private var stamp = Binding.constant(Stamp())
   static var previews: some View {
-    OnboardingScreenView(onboardingScreenIsShowing: onboardingScreenIsShowing)
-    WelcomeScreenView(welcomeScreenIsShowing: welcomeScreenIsShowing, stamp: stamp)
+    VStack {
+      WelcomeScreenView(welcomeScreenIsShowing: welcomeScreenIsShowing, nextButtonIsShowing: nextButtonIsShowing, stamp: stamp)
+    }
   }
 }

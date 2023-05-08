@@ -9,12 +9,20 @@ import SwiftUI
 
 struct StampStockView: View {
   
-  let stamp = Stamp(totalAmount: Double(), discountedAmount: Double())
-  
   var body: some View {
     
-    List(stamp.unitedNationsStamps) { unitedNationStamp in
-      StampView(stamp: unitedNationStamp)
+    // MARK: Assignment 2: Summary screen and detail screen
+    
+    NavigationStack {
+      List {
+        ForEach(stamp.unitedNationsStamps, id: \.self) {
+          unitedNationStamp in
+          NavigationLink(unitedNationStamp.description, destination: StampView(stamp: unitedNationStamp))
+        }
+        .navigationTitle("Stocked Stamps")
+      }
+      .listStyle(GroupedListStyle())
+      .frame(width: 400)
     }
   }
 }

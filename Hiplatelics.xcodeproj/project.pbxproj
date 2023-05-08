@@ -19,6 +19,9 @@
 		AB193C2129E21DE000365AA5 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB193C2029E21DE000365AA5 /* RoundedViews.swift */; };
 		AB193C2329E3230600365AA5 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB193C2229E3230600365AA5 /* OnboardingScreenView.swift */; };
 		AB2D19AB29F74430007C8394 /* DiscountTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2D19AA29F74430007C8394 /* DiscountTypeView.swift */; };
+		ABADC0BA2A0931FF00BDAA7B /* StampStockGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC0B92A0931FF00BDAA7B /* StampStockGridView.swift */; };
+		ABADC0BC2A09325400BDAA7B /* StampShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC0BB2A09325400BDAA7B /* StampShopView.swift */; };
+		ABADC0BE2A09339500BDAA7B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC0BD2A09339500BDAA7B /* MainView.swift */; };
 		ABB3615929FF5DA700C87347 /* StampStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3615829FF5DA700C87347 /* StampStockView.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 		AB2D198D29F6F167007C8394 /* W3_Homework_Assignment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = W3_Homework_Assignment.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AB2D19AA29F74430007C8394 /* DiscountTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTypeView.swift; sourceTree = "<group>"; };
 		ABA0021D29E9D18D007A0001 /* dataCollectionPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = dataCollectionPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		ABADC0B92A0931FF00BDAA7B /* StampStockGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampStockGridView.swift; sourceTree = "<group>"; };
+		ABADC0BB2A09325400BDAA7B /* StampShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampShopView.swift; sourceTree = "<group>"; };
+		ABADC0BD2A09339500BDAA7B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		ABB3615829FF5DA700C87347 /* StampStockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampStockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,12 +100,15 @@
 			isa = PBXGroup;
 			children = (
 				AB193C0529E1FF7B00365AA5 /* ContentView.swift */,
+				ABADC0BD2A09339500BDAA7B /* MainView.swift */,
 				AB193C1729E2082800365AA5 /* WelcomeScreen.swift */,
 				AB193C1929E20AC500365AA5 /* TextViews.swift */,
 				AB193C2029E21DE000365AA5 /* RoundedViews.swift */,
 				AB193C2229E3230600365AA5 /* OnboardingScreenView.swift */,
 				AB2D19AA29F74430007C8394 /* DiscountTypeView.swift */,
 				ABB3615829FF5DA700C87347 /* StampStockView.swift */,
+				ABADC0B92A0931FF00BDAA7B /* StampStockGridView.swift */,
+				ABADC0BB2A09325400BDAA7B /* StampShopView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABADC0BC2A09325400BDAA7B /* StampShopView.swift in Sources */,
+				ABADC0BE2A09339500BDAA7B /* MainView.swift in Sources */,
 				AB193C1829E2082800365AA5 /* WelcomeScreen.swift in Sources */,
 				AB193C1A29E20AC500365AA5 /* TextViews.swift in Sources */,
 				AB193C0629E1FF7B00365AA5 /* ContentView.swift in Sources */,
@@ -219,6 +230,7 @@
 				AB193C2129E21DE000365AA5 /* RoundedViews.swift in Sources */,
 				AB193C1D29E21A5900365AA5 /* Stamp.swift in Sources */,
 				AB193C1F29E21A7E00365AA5 /* Constants.swift in Sources */,
+				ABADC0BA2A0931FF00BDAA7B /* StampStockGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
