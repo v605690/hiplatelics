@@ -10,14 +10,15 @@ import SwiftUI
 struct ContentView: View {
   
   @State private var welcomeScreenIsShowing = false
-  @State private var stamp = Stamp(totalAmount: Double(), discountedAmount: Double())
+  @State private var nextButtonIsShowing = false
+  @State private var stamp = Stamp()
   
   var body: some View {
     ZStack {
       
-      Color("WelcomeScreenColor").ignoresSafeArea()
+      Color("SchemeColor").ignoresSafeArea()
       VStack(spacing: 10) {
-        HeaderView(welcomeScreenIsShowing: $welcomeScreenIsShowing, stamp: $stamp)
+        HeaderView(nextButtonIsShowing: $nextButtonIsShowing, welcomeScreenIsShowing: $welcomeScreenIsShowing, stamp: $stamp)
       }
     }
   }

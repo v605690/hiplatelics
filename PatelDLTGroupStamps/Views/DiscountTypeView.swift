@@ -9,9 +9,7 @@ import SwiftUI
 
 struct DiscountTypeView: View {
   
-  @State private var buyButtonIsShowing = false
-  
-  var text: String
+var stamp = Stamp()
   
   var body: some View {
     let discountTypes = [ "Monthly Discount" : "5",
@@ -20,63 +18,25 @@ struct DiscountTypeView: View {
                           "Year End Discount" : "20",
     ]
 
-    ScrollView() {
-      Spacer()
-        .padding()
-
-      NavigationView {
-        List {
-          let discounts = discountTypes.sorted(by: <)
-          ForEach(discounts.sorted(by: <), id: \.key)
-          { key, value in
-            Section(header: Text(key)) {
-              Text("\(value) % ")
-            }
-          }
-        }
-
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-          ToolbarItem(placement: .principal) {
-            VStack {
-              Text(" ").font(.subheadline)
-                .padding(.top)
-              Text("Discounts Available")
-                .bold()
-                .fontWeight(.heavy)
-            }
-          }
-        }
-        .fontWeight(.regular)
-        
-        .toolbar {
-          ToolbarItem(placement: .navigationBarLeading) {
-            HStack {
-              Text("")
-              NavigationLink(destination: StampStockView()) {
-                Image(systemName: "list.dash")
-              }
-            }
-          }
-          
-          ToolbarItem(placement: .navigationBarTrailing) {
-            HStack {
-              Text("")
-              NavigationLink(destination: EmptyView()) {
-                Image(systemName: "cart.badge.plus")
-              }
-            }
+    NavigationStack {
+      List {
+        let discounts = discountTypes.sorted(by: <)
+        ForEach(discounts.sorted(by: <), id: \.key)
+        { key, value in
+          Section(header: Text(key)) {
+            Text("\(value) % ")
           }
         }
       }
+      .navigationTitle("Discount Types")
+      .listStyle(GroupedListStyle())
     }
-    .padding(.top, 0.3)
   }
 }
 
 
 struct DiscountTypeView_Previews: PreviewProvider {
   static var previews: some View {
-    DiscountTypeView(text: "Discount Types")
+    DiscountTypeView()
   }
 }
