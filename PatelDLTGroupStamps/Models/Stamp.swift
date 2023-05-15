@@ -11,9 +11,10 @@ var stamp = Stamp()
 var stampImages = StampImage(name: "")
 
 struct Stamp {
+  
   struct UNStamp: Codable, Hashable, Identifiable {
     var id = UUID()
-    let seller: String
+    var seller: String
     var name: String? = nil
     let description: String
     var image: String
@@ -49,7 +50,7 @@ let stampImage = (1...15).map { StampImage(name: "image\($0)") }
 
 struct StampDiscount {
   
-  var itemPrices = [7.00, 10.00, 20.00, 6.00, 2.00, 3.00,8.00]
+  var itemPrices = [7.00, 10.00, 20.00, 6.00, 2.00, 3.00, 8.00]
   var discountPercentage = 0.10
   var totalAmount: Double
   var discountedAmount: Double

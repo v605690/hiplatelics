@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "9DD4E55E-F2F4-46CF-B953-FCF7852D5EB8",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Hiplatelics.xcodeproj",
+      "identifier" : "AB193BFF29E1FF7B00365AA5",
+      "name" : "Hiplatelics"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Hiplatelics.xcodeproj",
+        "identifier" : "AB6F42602A114BFF00B3B154",
+        "name" : "HiplatelicsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Hiplatelics.xcodeproj",
+        "identifier" : "AB6F426E2A11D04700B3B154",
+        "name" : "HiplatelicsUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
