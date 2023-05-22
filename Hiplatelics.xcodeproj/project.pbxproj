@@ -19,11 +19,32 @@
 		AB193C2129E21DE000365AA5 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB193C2029E21DE000365AA5 /* RoundedViews.swift */; };
 		AB193C2329E3230600365AA5 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB193C2229E3230600365AA5 /* OnboardingScreenView.swift */; };
 		AB2D19AB29F74430007C8394 /* DiscountTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2D19AA29F74430007C8394 /* DiscountTypeView.swift */; };
+		AB6F42642A114BFF00B3B154 /* HiplatelicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F42632A114BFF00B3B154 /* HiplatelicsTests.swift */; };
+		AB6F42722A11D04700B3B154 /* HiplatelicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F42712A11D04700B3B154 /* HiplatelicsUITests.swift */; };
+		AB6F42742A11D04700B3B154 /* HiplatelicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F42732A11D04700B3B154 /* HiplatelicsUITestsLaunchTests.swift */; };
+		AB6F427B2A12653900B3B154 /* UIHiplatelicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F427A2A12653900B3B154 /* UIHiplatelicsUITests.swift */; };
 		ABADC0BA2A0931FF00BDAA7B /* StampStockGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC0B92A0931FF00BDAA7B /* StampStockGridView.swift */; };
 		ABADC0BC2A09325400BDAA7B /* StampShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC0BB2A09325400BDAA7B /* StampShopView.swift */; };
 		ABADC0BE2A09339500BDAA7B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC0BD2A09339500BDAA7B /* MainView.swift */; };
 		ABB3615929FF5DA700C87347 /* StampStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3615829FF5DA700C87347 /* StampStockView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB6F42652A114BFF00B3B154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB193BF829E1FF7B00365AA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB193BFF29E1FF7B00365AA5;
+			remoteInfo = Hiplatelics;
+		};
+		AB6F42752A11D04700B3B154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB193BF829E1FF7B00365AA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB193BFF29E1FF7B00365AA5;
+			remoteInfo = Hiplatelics;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AB193C0029E1FF7B00365AA5 /* Hiplatelics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hiplatelics.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +61,13 @@
 		AB193C2229E3230600365AA5 /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		AB2D198D29F6F167007C8394 /* W3_Homework_Assignment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = W3_Homework_Assignment.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AB2D19AA29F74430007C8394 /* DiscountTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTypeView.swift; sourceTree = "<group>"; };
+		AB6F42612A114BFF00B3B154 /* HiplatelicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiplatelicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6F42632A114BFF00B3B154 /* HiplatelicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiplatelicsTests.swift; sourceTree = "<group>"; };
+		AB6F426A2A114CC300B3B154 /* Hiplatelics.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Hiplatelics.xctestplan; sourceTree = "<group>"; };
+		AB6F426F2A11D04700B3B154 /* HiplatelicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiplatelicsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6F42712A11D04700B3B154 /* HiplatelicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiplatelicsUITests.swift; sourceTree = "<group>"; };
+		AB6F42732A11D04700B3B154 /* HiplatelicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiplatelicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB6F427A2A12653900B3B154 /* UIHiplatelicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHiplatelicsUITests.swift; sourceTree = SOURCE_ROOT; };
 		ABA0021D29E9D18D007A0001 /* dataCollectionPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = dataCollectionPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ABADC0B92A0931FF00BDAA7B /* StampStockGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampStockGridView.swift; sourceTree = "<group>"; };
 		ABADC0BB2A09325400BDAA7B /* StampShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampShopView.swift; sourceTree = "<group>"; };
@@ -55,14 +83,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB6F425E2A114BFF00B3B154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6F426C2A11D04700B3B154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		AB193BF729E1FF7B00365AA5 = {
 			isa = PBXGroup;
 			children = (
+				AB6F426A2A114CC300B3B154 /* Hiplatelics.xctestplan */,
 				AB193C1529E2071F00365AA5 /* README.md */,
 				AB193C0229E1FF7B00365AA5 /* PatelDLTGroupStamps */,
+				AB6F42622A114BFF00B3B154 /* HiplatelicsTests */,
+				AB6F42702A11D04700B3B154 /* HiplatelicsUITests */,
 				AB193C0129E1FF7B00365AA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				AB193C0029E1FF7B00365AA5 /* Hiplatelics.app */,
+				AB6F42612A114BFF00B3B154 /* HiplatelicsTests.xctest */,
+				AB6F426F2A11D04700B3B154 /* HiplatelicsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +178,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		AB6F42622A114BFF00B3B154 /* HiplatelicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB6F42632A114BFF00B3B154 /* HiplatelicsTests.swift */,
+			);
+			path = HiplatelicsTests;
+			sourceTree = "<group>";
+		};
+		AB6F42702A11D04700B3B154 /* HiplatelicsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB6F427A2A12653900B3B154 /* UIHiplatelicsUITests.swift */,
+				AB6F42712A11D04700B3B154 /* HiplatelicsUITests.swift */,
+				AB6F42732A11D04700B3B154 /* HiplatelicsUITestsLaunchTests.swift */,
+			);
+			path = HiplatelicsUITests;
+			sourceTree = "<group>";
+		};
 		ABA0021C29E9D06B007A0001 /* hiplatelics_playground */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +232,42 @@
 			productReference = AB193C0029E1FF7B00365AA5 /* Hiplatelics.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AB6F42602A114BFF00B3B154 /* HiplatelicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB6F42692A114BFF00B3B154 /* Build configuration list for PBXNativeTarget "HiplatelicsTests" */;
+			buildPhases = (
+				AB6F425D2A114BFF00B3B154 /* Sources */,
+				AB6F425E2A114BFF00B3B154 /* Frameworks */,
+				AB6F425F2A114BFF00B3B154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB6F42662A114BFF00B3B154 /* PBXTargetDependency */,
+			);
+			name = HiplatelicsTests;
+			productName = HiplatelicsTests;
+			productReference = AB6F42612A114BFF00B3B154 /* HiplatelicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB6F426E2A11D04700B3B154 /* HiplatelicsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB6F42772A11D04700B3B154 /* Build configuration list for PBXNativeTarget "HiplatelicsUITests" */;
+			buildPhases = (
+				AB6F426B2A11D04700B3B154 /* Sources */,
+				AB6F426C2A11D04700B3B154 /* Frameworks */,
+				AB6F426D2A11D04700B3B154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB6F42762A11D04700B3B154 /* PBXTargetDependency */,
+			);
+			name = HiplatelicsUITests;
+			productName = HiplatelicsUITests;
+			productReference = AB6F426F2A11D04700B3B154 /* HiplatelicsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,6 +280,14 @@
 				TargetAttributes = {
 					AB193BFF29E1FF7B00365AA5 = {
 						CreatedOnToolsVersion = 14.3;
+					};
+					AB6F42602A114BFF00B3B154 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = AB193BFF29E1FF7B00365AA5;
+					};
+					AB6F426E2A11D04700B3B154 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = AB193BFF29E1FF7B00365AA5;
 					};
 				};
 			};
@@ -196,6 +305,8 @@
 			projectRoot = "";
 			targets = (
 				AB193BFF29E1FF7B00365AA5 /* Hiplatelics */,
+				AB6F42602A114BFF00B3B154 /* HiplatelicsTests */,
+				AB6F426E2A11D04700B3B154 /* HiplatelicsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +319,20 @@
 				AB193C1629E2071F00365AA5 /* README.md in Resources */,
 				AB193C0B29E1FF7C00365AA5 /* Preview Assets.xcassets in Resources */,
 				AB193C0829E1FF7C00365AA5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6F425F2A114BFF00B3B154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6F426D2A11D04700B3B154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +359,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB6F425D2A114BFF00B3B154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6F42642A114BFF00B3B154 /* HiplatelicsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6F426B2A11D04700B3B154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6F42722A11D04700B3B154 /* HiplatelicsUITests.swift in Sources */,
+				AB6F42742A11D04700B3B154 /* HiplatelicsUITestsLaunchTests.swift in Sources */,
+				AB6F427B2A12653900B3B154 /* UIHiplatelicsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB6F42662A114BFF00B3B154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB193BFF29E1FF7B00365AA5 /* Hiplatelics */;
+			targetProxy = AB6F42652A114BFF00B3B154 /* PBXContainerItemProxy */;
+		};
+		AB6F42762A11D04700B3B154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB193BFF29E1FF7B00365AA5 /* Hiplatelics */;
+			targetProxy = AB6F42752A11D04700B3B154 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AB193C0C29E1FF7C00365AA5 /* Debug */ = {
@@ -417,6 +573,76 @@
 			};
 			name = Release;
 		};
+		AB6F42672A114BFF00B3B154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46XAGWCJPW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Crus-Technologies.HiplatelicsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hiplatelics.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hiplatelics";
+			};
+			name = Debug;
+		};
+		AB6F42682A114BFF00B3B154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46XAGWCJPW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Crus-Technologies.HiplatelicsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hiplatelics.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hiplatelics";
+			};
+			name = Release;
+		};
+		AB6F42782A11D04700B3B154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46XAGWCJPW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Crus-Technologies.HiplatelicsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hiplatelics;
+			};
+			name = Debug;
+		};
+		AB6F42792A11D04700B3B154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46XAGWCJPW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Crus-Technologies.HiplatelicsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hiplatelics;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,6 +660,24 @@
 			buildConfigurations = (
 				AB193C0F29E1FF7C00365AA5 /* Debug */,
 				AB193C1029E1FF7C00365AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB6F42692A114BFF00B3B154 /* Build configuration list for PBXNativeTarget "HiplatelicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6F42672A114BFF00B3B154 /* Debug */,
+				AB6F42682A114BFF00B3B154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB6F42772A11D04700B3B154 /* Build configuration list for PBXNativeTarget "HiplatelicsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6F42782A11D04700B3B154 /* Debug */,
+				AB6F42792A11D04700B3B154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
