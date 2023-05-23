@@ -27,6 +27,8 @@
 		ABADC0BC2A09325400BDAA7B /* StampShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC0BB2A09325400BDAA7B /* StampShopView.swift */; };
 		ABADC0BE2A09339500BDAA7B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC0BD2A09339500BDAA7B /* MainView.swift */; };
 		ABB3615929FF5DA700C87347 /* StampStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB3615829FF5DA700C87347 /* StampStockView.swift */; };
+		ABF92C1D2A1BC319002A1EDA /* StampStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF92C1C2A1BC319002A1EDA /* StampStore.swift */; };
+		ABF92C202A1BC551002A1EDA /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF92C1F2A1BC551002A1EDA /* FileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		ABADC0BB2A09325400BDAA7B /* StampShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampShopView.swift; sourceTree = "<group>"; };
 		ABADC0BD2A09339500BDAA7B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		ABB3615829FF5DA700C87347 /* StampStockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampStockView.swift; sourceTree = "<group>"; };
+		ABF92C1C2A1BC319002A1EDA /* StampStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampStore.swift; sourceTree = "<group>"; };
+		ABF92C1F2A1BC551002A1EDA /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		AB193C0229E1FF7B00365AA5 /* PatelDLTGroupStamps */ = {
 			isa = PBXGroup;
 			children = (
+				ABF92C1E2A1BC52C002A1EDA /* Extensions */,
 				ABA0021E29E9D3C3007A0001 /* App Resources */,
 				AB193C1429E2070800365AA5 /* App */,
 				AB193C1329E206D800365AA5 /* Views */,
@@ -174,6 +179,7 @@
 			children = (
 				AB193C1C29E21A5900365AA5 /* Stamp.swift */,
 				AB193C1E29E21A7E00365AA5 /* Constants.swift */,
+				ABF92C1C2A1BC319002A1EDA /* StampStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -210,6 +216,14 @@
 				AB2D198D29F6F167007C8394 /* W3_Homework_Assignment.playground */,
 			);
 			path = "App Resources";
+			sourceTree = "<group>";
+		};
+		ABF92C1E2A1BC52C002A1EDA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ABF92C1F2A1BC551002A1EDA /* FileManager.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,11 +357,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF92C202A1BC551002A1EDA /* FileManager.swift in Sources */,
 				ABADC0BC2A09325400BDAA7B /* StampShopView.swift in Sources */,
 				ABADC0BE2A09339500BDAA7B /* MainView.swift in Sources */,
 				AB193C1829E2082800365AA5 /* WelcomeScreen.swift in Sources */,
 				AB193C1A29E20AC500365AA5 /* TextViews.swift in Sources */,
 				AB193C0629E1FF7B00365AA5 /* ContentView.swift in Sources */,
+				ABF92C1D2A1BC319002A1EDA /* StampStore.swift in Sources */,
 				AB193C2329E3230600365AA5 /* OnboardingScreenView.swift in Sources */,
 				AB2D19AB29F74430007C8394 /* DiscountTypeView.swift in Sources */,
 				ABB3615929FF5DA700C87347 /* StampStockView.swift in Sources */,
