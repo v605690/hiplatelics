@@ -93,7 +93,6 @@ class UNStampLoader {
     guard let data = try? Data.init(contentsOf: plistURL),
           let preferences = try? decoder.decode(UNStamp.self, from: data) else { return UNStamp(seller: "", name: "", description: "", image: "", price: "")
     }
-
     return preferences
   }
 }
