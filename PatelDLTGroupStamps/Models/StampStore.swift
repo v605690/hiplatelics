@@ -9,21 +9,23 @@ import Foundation
 
 /* MARK: Created struct with properties along with array.
  
- Had a difficult time on assignment 7, confused at times. The videos helped but I felt as though was not clear enough
- 
- I ended up creating a new file StampStore and incorporated a new struct along with saving and load data but not the preferred way to do things but wanted show some progress.
-*/
+ Created a new StampStore and StampPListView swift file also incorporated a new struct along with saving and loading data but not the preferred way to do things.
 
-struct UNStamp: Codable, Hashable, Identifiable {
+  Not sure if the the output is correct or not by running the app.
+
+  Please note I have updated the Hiplatelics.swift to start the view on StampPListView.
+ */
+
+struct UNStamp: Codable, Identifiable {
   var id = UUID()
   var seller: String
-  var name: String? = nil
-  let description: String
+  var name: String
+  var description: String
   var image: String
-  let price: String
-  var discountTypes: [String] = []
-}
+  var price: String
 
+  static let example = UNStamp(seller: "hiplatics", name: "Vienna collector stamp", description: "UNESCO World Heritage Site I", image: "image1", price: "2.99")
+}
 var unitedNationsStamps = [
   UNStamp(seller: "hiplatics", name: "Vienna collector stamp", description: "UNESCO World Heritage Site I", image: "image1", price: "2.99"),
   UNStamp(seller: "hiplatics", name: "Vienna collector stamp", description: "UNESCO World Heritage Site II", image: "image2", price: "2.99"),
@@ -43,34 +45,72 @@ var unitedNationsStamps = [
 ]
 
 // MARK: URL - Using FileManager
-let stampsPListURL = URL(fileURLWithPath: "Stamp", relativeTo: FileManager.documentsDirectoryURL.appendingPathExtension("plist"))
+class UNStamps {
 
-// MARK: Assignment 1: Saving data to Plist only
-private func savePListStamps() {
-  let encoder = PropertyListEncoder()
-  encoder.outputFormat = .xml
-  
-  do {
-    let encodedData = try encoder.encode(unitedNationsStamps)
-    try! encodedData.write(to: stampsPListURL, options: .atomicWrite)
-    print(encodedData)
-  } catch let error {
-    print(error)
+  @Published var hiplatelics = [UNStamp]()
+
+  let stampJSONURL = URL(fileURLWithPath: "hiplatelics", relativeTo: FileManager.documentsDirectoryURL).appendingPathExtension("json")
+
+  func loadJSONStamps() {
+    guard FileManager.default.fileExists(atPath: stampJSONURL.path) else {
+      return
+    }
+
+    let decoder = JSONDecoder()
+
+    do {
+      let stampsData = try Data(contentsOf: stampJSONURL)
+      hiplatelics = try decoder.decode([UNStamp].self, from: stampsData)
+    } catch let error {
+      print(error)
+    }
+  }
+
+  func saveJSONUNStamps() {
+    let encoder = JSONEncoder()
+    encoder.outputFormatting = .prettyPrinted
+
+    do {
+      let stampsData = try encoder.encode(unitedNationsStamps)
+      try stampsData.write(to: stampJSONURL, options: .atomicWrite)
+    } catch let error {
+      print(error)
+    }
   }
 }
-// MARK: Assignment 2: Loading the saved data
-private func loadPListStamps() {
-  guard FileManager.default.fileExists(atPath: stampsPListURL.path)
-  else {
-    return
+
+
+class UNStampLoader {
+
+  static var plistURL: URL {
+    let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    return documents.appendingPathComponent("StampStore.plist")
   }
-  
-  let decoder = PropertyListDecoder()
-  
-  do {
-    let encodedData = try Data(contentsOf: stampsPListURL)
-    unitedNationsStamps = try decoder.decode([UNStamp].self, from: encodedData)
-  } catch let error {
-    print(error)
+
+  static func load() -> UNStamp {
+    let decoder = PropertyListDecoder()
+
+    guard let data = try? Data.init(contentsOf: plistURL),
+          let preferences = try? decoder.decode(UNStamp.self, from: data) else { return UNStamp(seller: "", name: "", description: "", image: "", price: "")
+    }
+
+    return preferences
   }
 }
+
+extension UNStampLoader {
+  static func write(preferences: UNStamp) {
+    let encoder = PropertyListEncoder()
+
+    if let data = try? encoder.encode(preferences) {
+      if FileManager.default.fileExists(atPath: plistURL.path) {
+        try? data.write(to: plistURL)
+      } else {
+        FileManager.default.createFile(atPath: plistURL.path, contents: data, attributes: nil)
+      }
+    }
+  }
+}
+
+
+

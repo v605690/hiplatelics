@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0AD9902A2159C30064A208 /* HiplatelicStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0AD98F2A2159C30064A208 /* HiplatelicStamp.swift */; };
+		AB0AD9922A2174F60064A208 /* StampLibaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0AD9912A2174F60064A208 /* StampLibaryView.swift */; };
+		AB0AD9942A2245CB0064A208 /* Stamps.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0AD9932A2245CB0064A208 /* Stamps.swift */; };
+		AB0AD9982A2260470064A208 /* hiplatelics.json in Resources */ = {isa = PBXBuildFile; fileRef = AB0AD9972A2260470064A208 /* hiplatelics.json */; };
 		AB193C0429E1FF7B00365AA5 /* Hiplatelics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB193C0329E1FF7B00365AA5 /* Hiplatelics.swift */; };
 		AB193C0629E1FF7B00365AA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB193C0529E1FF7B00365AA5 /* ContentView.swift */; };
 		AB193C0829E1FF7C00365AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB193C0729E1FF7C00365AA5 /* Assets.xcassets */; };
@@ -23,6 +27,7 @@
 		AB6F42722A11D04700B3B154 /* HiplatelicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F42712A11D04700B3B154 /* HiplatelicsUITests.swift */; };
 		AB6F42742A11D04700B3B154 /* HiplatelicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F42732A11D04700B3B154 /* HiplatelicsUITestsLaunchTests.swift */; };
 		AB6F427B2A12653900B3B154 /* UIHiplatelicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F427A2A12653900B3B154 /* UIHiplatelicsUITests.swift */; };
+		AB7BED6D2A252B2800D81C17 /* StampPListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7BED6C2A252B2800D81C17 /* StampPListView.swift */; };
 		ABADC0BA2A0931FF00BDAA7B /* StampStockGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC0B92A0931FF00BDAA7B /* StampStockGridView.swift */; };
 		ABADC0BC2A09325400BDAA7B /* StampShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC0BB2A09325400BDAA7B /* StampShopView.swift */; };
 		ABADC0BE2A09339500BDAA7B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC0BD2A09339500BDAA7B /* MainView.swift */; };
@@ -49,6 +54,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB0AD98F2A2159C30064A208 /* HiplatelicStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiplatelicStamp.swift; sourceTree = "<group>"; };
+		AB0AD9912A2174F60064A208 /* StampLibaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampLibaryView.swift; sourceTree = "<group>"; };
+		AB0AD9932A2245CB0064A208 /* Stamps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stamps.swift; sourceTree = "<group>"; };
+		AB0AD9972A2260470064A208 /* hiplatelics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hiplatelics.json; sourceTree = "<group>"; };
 		AB193C0029E1FF7B00365AA5 /* Hiplatelics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hiplatelics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB193C0329E1FF7B00365AA5 /* Hiplatelics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hiplatelics.swift; sourceTree = "<group>"; };
 		AB193C0529E1FF7B00365AA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +79,7 @@
 		AB6F42712A11D04700B3B154 /* HiplatelicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiplatelicsUITests.swift; sourceTree = "<group>"; };
 		AB6F42732A11D04700B3B154 /* HiplatelicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiplatelicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB6F427A2A12653900B3B154 /* UIHiplatelicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHiplatelicsUITests.swift; sourceTree = SOURCE_ROOT; };
+		AB7BED6C2A252B2800D81C17 /* StampPListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampPListView.swift; sourceTree = "<group>"; };
 		ABA0021D29E9D18D007A0001 /* dataCollectionPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = dataCollectionPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ABADC0B92A0931FF00BDAA7B /* StampStockGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampStockGridView.swift; sourceTree = "<group>"; };
 		ABADC0BB2A09325400BDAA7B /* StampShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampShopView.swift; sourceTree = "<group>"; };
@@ -160,7 +170,10 @@
 				AB2D19AA29F74430007C8394 /* DiscountTypeView.swift */,
 				ABB3615829FF5DA700C87347 /* StampStockView.swift */,
 				ABADC0B92A0931FF00BDAA7B /* StampStockGridView.swift */,
+				AB0AD9912A2174F60064A208 /* StampLibaryView.swift */,
+				AB0AD9932A2245CB0064A208 /* Stamps.swift */,
 				ABADC0BB2A09325400BDAA7B /* StampShopView.swift */,
+				AB7BED6C2A252B2800D81C17 /* StampPListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				AB193C0329E1FF7B00365AA5 /* Hiplatelics.swift */,
+				AB0AD9972A2260470064A208 /* hiplatelics.json */,
 				AB193C0729E1FF7C00365AA5 /* Assets.xcassets */,
 			);
 			path = App;
@@ -180,6 +194,7 @@
 				AB193C1C29E21A5900365AA5 /* Stamp.swift */,
 				AB193C1E29E21A7E00365AA5 /* Constants.swift */,
 				ABF92C1C2A1BC319002A1EDA /* StampStore.swift */,
+				AB0AD98F2A2159C30064A208 /* HiplatelicStamp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +251,7 @@
 				AB193BFC29E1FF7B00365AA5 /* Sources */,
 				AB193BFD29E1FF7B00365AA5 /* Frameworks */,
 				AB193BFE29E1FF7B00365AA5 /* Resources */,
+				AB7BED6B2A23A66B00D81C17 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -332,6 +348,7 @@
 			files = (
 				AB193C1629E2071F00365AA5 /* README.md in Resources */,
 				AB193C0B29E1FF7C00365AA5 /* Preview Assets.xcassets in Resources */,
+				AB0AD9982A2260470064A208 /* hiplatelics.json in Resources */,
 				AB193C0829E1FF7C00365AA5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +369,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB7BED6B2A23A66B00D81C17 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB193BFC29E1FF7B00365AA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -361,8 +398,10 @@
 				ABADC0BC2A09325400BDAA7B /* StampShopView.swift in Sources */,
 				ABADC0BE2A09339500BDAA7B /* MainView.swift in Sources */,
 				AB193C1829E2082800365AA5 /* WelcomeScreen.swift in Sources */,
+				AB0AD9902A2159C30064A208 /* HiplatelicStamp.swift in Sources */,
 				AB193C1A29E20AC500365AA5 /* TextViews.swift in Sources */,
 				AB193C0629E1FF7B00365AA5 /* ContentView.swift in Sources */,
+				AB0AD9942A2245CB0064A208 /* Stamps.swift in Sources */,
 				ABF92C1D2A1BC319002A1EDA /* StampStore.swift in Sources */,
 				AB193C2329E3230600365AA5 /* OnboardingScreenView.swift in Sources */,
 				AB2D19AB29F74430007C8394 /* DiscountTypeView.swift in Sources */,
@@ -371,7 +410,9 @@
 				AB193C2129E21DE000365AA5 /* RoundedViews.swift in Sources */,
 				AB193C1D29E21A5900365AA5 /* Stamp.swift in Sources */,
 				AB193C1F29E21A7E00365AA5 /* Constants.swift in Sources */,
+				AB7BED6D2A252B2800D81C17 /* StampPListView.swift in Sources */,
 				ABADC0BA2A0931FF00BDAA7B /* StampStockGridView.swift in Sources */,
+				AB0AD9922A2174F60064A208 /* StampLibaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

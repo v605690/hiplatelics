@@ -48,8 +48,8 @@ struct HeaderView: View {
         }
       }
     }
-  .padding([.horizontal, .top])
-  Spacer()
+    .padding([.horizontal, .top])
+    Spacer()
   }
 }
 

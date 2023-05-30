@@ -54,12 +54,6 @@ final class HiplatelicsTests: XCTestCase {
     XCTAssertEqual(discount, 0.10)
   }
   
-  func testStampsPListURL() {
-    let url = stampsPListURL
-    
-    XCTAssert(url.isFileURL)
-  }
-  
   func testFileManager() {
     let fileManager = FileManager.documentsDirectoryURL
     

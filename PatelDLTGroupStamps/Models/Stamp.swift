@@ -19,7 +19,6 @@ struct Stamp: Codable, Hashable {
     let description: String
     var image: String
     let price: String
-    var discountTypes: [String] = []
   }
   
   var unitedNationsStamps = [
