@@ -10,7 +10,7 @@ import Foundation
 var stamp = Stamp()
 var stampImages = StampImage(name: "")
 
-struct Stamp {
+struct Stamp: Codable, Hashable {
   
   struct UNStamp: Codable, Hashable, Identifiable {
     var id = UUID()
@@ -19,10 +19,9 @@ struct Stamp {
     let description: String
     var image: String
     let price: String
-    var discountTypes: [String] = []
   }
   
-  let unitedNationsStamps = [
+  var unitedNationsStamps = [
     UNStamp(seller: "hiplatics", name: "Vienna collector stamp", description: "UNESCO World Heritage Site I", image: "image1", price: "2.99"),
     UNStamp(seller: "hiplatics", name: "Vienna collector stamp", description: "UNESCO World Heritage Site II", image: "image2", price: "2.99"),
     UNStamp(seller: "hiplatics", name: "Vienna collector stamp", description: "Alhambra Granada Spain World Heritage", image: "image3", price: "2.19"),

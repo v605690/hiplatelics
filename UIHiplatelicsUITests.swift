@@ -46,4 +46,34 @@ final class UIHiplatelicsUITests: XCTestCase {
       
     XCTAssert(cursorButton.exists)
   }
+
+  func testLoadData() {
+
+    let app = XCUIApplication()
+    app.textFields["Seller"].tap()
+    
+    let nameTextField = app.textFields["Name"]
+    nameTextField.tap()
+    nameTextField.tap()
+    
+    let descriptionTextField = app.textFields["Description"]
+    descriptionTextField.tap()
+    descriptionTextField.tap()
+    
+    let priceTextField = app.textFields["Price"]
+    priceTextField.tap()
+    priceTextField.tap()
+    app.buttons["Update"].tap()
+    app.buttons["Save"].tap()
+
+    XCTAssert(app.buttons.element.exists)
+
+  }
+
+  func testUpdateData() {
+  XCUIApplication().buttons["Update"].tap()
+
+    XCTAssert(app.buttons.element.exists)
+
+  }
 }
