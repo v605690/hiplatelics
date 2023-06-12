@@ -23,6 +23,7 @@ struct StampStockView: View {
             image
               .resizable()
               .aspectRatio(contentMode: .fit)
+            // MARK: Assignment 3
           } else if stamp.error != nil {
             Button("Show Alert") {
               shoppingAlert = true
@@ -53,9 +54,11 @@ struct StampStockView: View {
         Image(systemName: "plus")
       })
     }
+    // MARK: Assignment 3 - Alert setup
     .alert("No network connection", isPresented: $shoppingAlert) {
       Button("OK", role: .cancel) {}
     }
+    // MARK: Assignment 2 Continued - Custom Error Setup
     .task {
       do {
         try await stampHelper.getStamps()

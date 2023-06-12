@@ -16,6 +16,7 @@ class StampHelper: ObservableObject {
       }
     }
   }
+  // MARK: Assignment 1
   func getStamps() async throws {
     let (data, response) = try await
     URLSession.shared.data(from: URL(string: "http://www.grupodlt.com/stamps/hip.json")!)
