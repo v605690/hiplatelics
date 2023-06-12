@@ -11,7 +11,7 @@ import SwiftUI
 struct Hiplatelics: App {
     var body: some Scene {
         WindowGroup {
-          StampPListView(unstamp: UNStamp.example)
+          MainView(stamps: [Stamp](), stampImage: StampImage(name: ""))
         }
     }
 }

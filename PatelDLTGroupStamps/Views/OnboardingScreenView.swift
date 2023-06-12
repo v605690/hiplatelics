@@ -30,7 +30,7 @@ struct OnboardingScreenView: View {
           Spacer()
           Spacer()
           
-          NavigationLink(destination: DiscountTypeView()) {
+          NavigationLink(destination: DiscountTypeView(stamp: Stamp.example)) {
             Text("Discounts")
           }
           .padding()
@@ -40,7 +40,7 @@ struct OnboardingScreenView: View {
           .cornerRadius(25)
           .font(.system(size: 18, weight: .bold, design: .default))
           Spacer()
-          NavigationLink(destination: MainView(stamps: stamp, stampImage: stampImages)) {
+          NavigationLink(destination: MainView(stamps: [stamps], stampImage: stampImages)) {
                 Text("Next  ->")
               }
           .padding()
@@ -58,7 +58,7 @@ struct OnboardingScreenView: View {
 }
 
 struct StampView: View {
-  let stamp: Stamp.UNStamp
+  let stamp: Stamp
   
   var body: some View {
     VStack(spacing: 10) {
@@ -66,11 +66,11 @@ struct StampView: View {
         .resizable()
         .aspectRatio(contentMode: .fit)
         .padding(.all, 10)
-      Text(stamp.name ?? "Unkown Name")
+      Text(stamp.title)
         .fixedSize(horizontal: false, vertical: true)
         .frame(width: 300)
         .font(.title2)
-      Text(stamp.description)
+      Text(stamp.description ?? "Unkown description")
         .fixedSize(horizontal: false, vertical: true)
         .frame(width: 400)
         .padding(.leading)
@@ -85,7 +85,7 @@ struct OnboardingScreenView_Previews: PreviewProvider {
   static private var onboardingScreenIsShowing = Binding.constant(false)
   static private var nextButtonIsShowing = Binding.constant(false)
   static var previews: some View {
-    OnboardingScreenView(nextButtonIsShowing: nextButtonIsShowing, onboardingScreenIsShowing: onboardingScreenIsShowing, stamps: stamp)
+    OnboardingScreenView(nextButtonIsShowing: nextButtonIsShowing, onboardingScreenIsShowing: onboardingScreenIsShowing, stamps: Stamp.example)
   }
 }
 

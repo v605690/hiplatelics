@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DiscountTypeView: View {
   
-var stamp = Stamp()
+  var stamp: Stamp
   
   var body: some View {
     let discountTypes = [ "Monthly Discount" : "5",
@@ -37,6 +37,6 @@ var stamp = Stamp()
 
 struct DiscountTypeView_Previews: PreviewProvider {
   static var previews: some View {
-    DiscountTypeView()
+    DiscountTypeView(stamp: Stamp.example)
   }
 }

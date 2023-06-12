@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
-  
-  var stamps: Stamp
+
+  var stamps: [Stamp]
   var stampImage: StampImage
   
   var body: some View {
@@ -30,19 +30,19 @@ struct MainView: View {
       StampStockView()
         .tabItem {
           Label("List", systemImage: "list.dash")
-        }.badge(stamps.unitedNationsStamps.count)
+        }.badge(12)
         
       StampStockGridView()
         .tabItem {
-          Label("Basket", systemImage: "basket")
-        }.badge(stampImage.name)
+          Label("Stock", systemImage: "folder.fill.badge.plus")
+        }.badge(15)
     }
   }
 }
 
 struct MainView_Previews: PreviewProvider {
   static var previews: some View {
-    MainView(stamps: stamp, stampImage: stampImages)
+    MainView(stamps: [Stamp.example].self, stampImage: stampImages)
   }
 }
 

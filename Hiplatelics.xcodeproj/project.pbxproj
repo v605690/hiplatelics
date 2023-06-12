@@ -23,6 +23,7 @@
 		AB193C2129E21DE000365AA5 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB193C2029E21DE000365AA5 /* RoundedViews.swift */; };
 		AB193C2329E3230600365AA5 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB193C2229E3230600365AA5 /* OnboardingScreenView.swift */; };
 		AB2D19AB29F74430007C8394 /* DiscountTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2D19AA29F74430007C8394 /* DiscountTypeView.swift */; };
+		AB3F26CA2A33C80F008E2170 /* StampHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3F26C92A33C80F008E2170 /* StampHelper.swift */; };
 		AB6F42642A114BFF00B3B154 /* HiplatelicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F42632A114BFF00B3B154 /* HiplatelicsTests.swift */; };
 		AB6F42722A11D04700B3B154 /* HiplatelicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F42712A11D04700B3B154 /* HiplatelicsUITests.swift */; };
 		AB6F42742A11D04700B3B154 /* HiplatelicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6F42732A11D04700B3B154 /* HiplatelicsUITestsLaunchTests.swift */; };
@@ -72,6 +73,8 @@
 		AB193C2229E3230600365AA5 /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		AB2D198D29F6F167007C8394 /* W3_Homework_Assignment.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = W3_Homework_Assignment.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AB2D19AA29F74430007C8394 /* DiscountTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountTypeView.swift; sourceTree = "<group>"; };
+		AB3B03B42A350C6B00FD066C /* Hiplatelics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Hiplatelics-Info.plist"; sourceTree = "<group>"; };
+		AB3F26C92A33C80F008E2170 /* StampHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampHelper.swift; sourceTree = "<group>"; };
 		AB6F42612A114BFF00B3B154 /* HiplatelicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiplatelicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB6F42632A114BFF00B3B154 /* HiplatelicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiplatelicsTests.swift; sourceTree = "<group>"; };
 		AB6F426A2A114CC300B3B154 /* Hiplatelics.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Hiplatelics.xctestplan; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 		AB193BF729E1FF7B00365AA5 = {
 			isa = PBXGroup;
 			children = (
+				AB3B03B42A350C6B00FD066C /* Hiplatelics-Info.plist */,
 				AB6F426A2A114CC300B3B154 /* Hiplatelics.xctestplan */,
 				AB193C1529E2071F00365AA5 /* README.md */,
 				AB193C0229E1FF7B00365AA5 /* PatelDLTGroupStamps */,
@@ -174,6 +178,7 @@
 				AB0AD9932A2245CB0064A208 /* Stamps.swift */,
 				ABADC0BB2A09325400BDAA7B /* StampShopView.swift */,
 				AB7BED6C2A252B2800D81C17 /* StampPListView.swift */,
+				AB3F26C92A33C80F008E2170 /* StampHelper.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				AB0AD9902A2159C30064A208 /* HiplatelicStamp.swift in Sources */,
 				AB193C1A29E20AC500365AA5 /* TextViews.swift in Sources */,
 				AB193C0629E1FF7B00365AA5 /* ContentView.swift in Sources */,
+				AB3F26CA2A33C80F008E2170 /* StampHelper.swift in Sources */,
 				AB0AD9942A2245CB0064A208 /* Stamps.swift in Sources */,
 				ABF92C1D2A1BC319002A1EDA /* StampStore.swift in Sources */,
 				AB193C2329E3230600365AA5 /* OnboardingScreenView.swift in Sources */,
@@ -575,6 +581,7 @@
 				DEVELOPMENT_TEAM = 46XAGWCJPW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hiplatelics-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Hiplatelics;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -608,6 +615,7 @@
 				DEVELOPMENT_TEAM = 46XAGWCJPW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hiplatelics-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Hiplatelics;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

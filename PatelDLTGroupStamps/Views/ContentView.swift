@@ -9,16 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
   
-  @State private var welcomeScreenIsShowing = false
-  @State private var nextButtonIsShowing = false
-  @State private var stamp = Stamp()
+  @State var welcomeScreenIsShowing = false
+  @State var nextButtonIsShowing = false
+  @State var stamps: Stamp
   
   var body: some View {
     ZStack {
       
       Color("SchemeColor").ignoresSafeArea()
       VStack(spacing: 10) {
-        HeaderView(nextButtonIsShowing: $nextButtonIsShowing, welcomeScreenIsShowing: $welcomeScreenIsShowing, stamp: $stamp)
+        HeaderView(nextButtonIsShowing: $nextButtonIsShowing, welcomeScreenIsShowing: $welcomeScreenIsShowing, stamp: $stamps)
       }
     }
   }
@@ -26,7 +26,7 @@ struct ContentView: View {
   struct ContentView_Previews: PreviewProvider {
     static private var welcomeScreenIsShowing = Binding.constant(false)
     static var previews: some View {
-      ContentView()
+      ContentView(stamps: Stamp.example)
     }
   }
 }

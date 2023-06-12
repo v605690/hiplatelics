@@ -56,7 +56,7 @@ struct HeaderView: View {
 struct WelcomeScreen_Previews: PreviewProvider {
   static private var welcomeScreenIsShowing = Binding.constant(false)
   static private var nextButtonIsShowing = Binding.constant(false)
-  static private var stamp = Binding.constant(Stamp())
+  static private var stamp = Binding.constant(Stamp.example)
   static var previews: some View {
     VStack {
       WelcomeScreenView(welcomeScreenIsShowing: welcomeScreenIsShowing, nextButtonIsShowing: nextButtonIsShowing, stamp: stamp)
